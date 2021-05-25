@@ -7,11 +7,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Impostor.Plugins.Example
 {
-    [ImpostorPlugin(
-        package: "maartii.jester",
-        name: "JesterPlugin",
-        author: "Maartii",
-        version: "1.0.0")]
+    [ImpostorPlugin(id: "maartii.jester")]
     public class ExamplePlugin : PluginBase
     {
         private readonly ILogger<ExamplePlugin> _logger;
